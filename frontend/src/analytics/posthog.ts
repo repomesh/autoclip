@@ -39,7 +39,6 @@ export function initAnalytics(): void {
   if (initialized) return
   if (!POSTHOG_KEY) {
     if (import.meta.env.DEV) {
-      // eslint-disable-next-line no-console
       console.info('[analytics] 未配置 VITE_PUBLIC_POSTHOG_KEY，埋点已禁用')
     }
     return
